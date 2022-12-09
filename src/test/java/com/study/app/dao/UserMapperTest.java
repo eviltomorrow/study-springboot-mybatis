@@ -18,7 +18,7 @@ public class UserMapperTest extends BaseTest {
 
     @Test
     public void testGetById() {
-        User user = mapper.getById(1);
+        User user = mapper.getUserById(1);
         if (user != null) {
             System.out.println(user.getUsername());
         }

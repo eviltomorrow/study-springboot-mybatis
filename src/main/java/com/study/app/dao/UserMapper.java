@@ -7,5 +7,6 @@ import com.study.app.pojo.User;
 
 @Mapper
 public interface UserMapper {
-    User getById(@Param("id") int id);
+    User getUserById(@Param("id") int id);
+    User getUserGameById(@Param("id") int id);
 }

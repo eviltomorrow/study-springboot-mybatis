@@ -18,6 +18,6 @@ public class UserController {
     }
     @RequestMapping("/mapper")
     public Object mapper() {
-        return mapper.getById(1);
+        return mapper.getUserById(1);
     }
 }
