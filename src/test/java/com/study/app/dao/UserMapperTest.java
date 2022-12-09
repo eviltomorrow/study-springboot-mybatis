@@ -1,14 +1,27 @@
 package com.study.app.dao;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
-public class UserMapperTest {
-    @Autowired
+import com.study.app.BaseTest;
+import com.study.app.pojo.User;
+
+import jakarta.annotation.Resource;
+
+public class UserMapperTest extends BaseTest {
+    @Resource
     private UserMapper mapper;
 
     @Test
-    public void testGetById(){
-        mapper.getById(0);
+    public void testHello() {
+        System.out.println("Hello world");
+    }
+
+    @Test
+    public void testGetById() {
+        User user = mapper.getById(1);
+        if (user != null) {
+            System.out.println(user.getUsername());
+        }
+
     }
 }
